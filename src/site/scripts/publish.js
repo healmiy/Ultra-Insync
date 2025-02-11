@@ -244,3 +244,12 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Initialize Lucide icons with SVG class
+if (window.lucide) {
+    lucide.createIcons({
+        attrs: {
+            class: ["svg-icon"]
+        }
+    });
+}
